@@ -1,0 +1,64 @@
+/*
+ * Styles for Ralph Saunders' Reddit Userscript
+ * A 24 Hour Hack Project
+ * 
+*/ 
+
+/*
+ * Tidy up all these !important statments!
+ * They're fuck ugly.
+ *
+*/
+
+/* Default Styles */
+body {font:12px/18px Arial, sans-serif !important;}
+.hide {display:none;}
+
+/* Header and Dropdown Nav */
+/* When logged out - yes, reddit restructures a lot of the code when you're logged in */
+#header {background-color:transparent;}
+#sr-header-area {background-color:#242424!important; font-size:100%; padding:10px !important;}
+#header a, #header .seperator{color:#F2F2F2;}
+.separator {display:none !important;}
+#sr-bar {overflow:hidden!important;}
+#sr-bar li{display:block;}
+.break {float:left; width:200px; overflow:hidden;}
+#sr-more-link {display:none!important;}
+#coreNav {clear:both; overflow:hidden; }
+#coreNav .sr-bar {float:left; margin-top:6px;}
+#coreNav .sr-bar li {margin-right:10px !important;}
+#search {float:right;}
+#search input {font-size:12px !important; width:200px !important; padding: 5px 0 5px 5px !important;}
+#searchexpando {display:none !important;}
+.dropdown .selected {display:none!important;}
+/* When logged in */
+.sr-bar li {margin-right:10px; float:left;} /* Not ideal, will have to come back to that later */
+.break li {float:none!important;}
+
+/* Logo and Navigation */
+#header-bottom-left { overflow:hidden; /* Fixes error caused by logo float */ }
+#header-img-a {overflow:hidden; display:block; margin:10px; float:left;}
+#header-img {height:40px!important; overflow:hidden!important;}
+span.redditname {display:none!important;}
+.tabmenu {margin-top:40px!important;}
+.tabmenu a {
+  color:#303030!important;
+  background-color:#CEE3F8!important;
+  padding:10px!important;
+  border-radius:5px;
+  border:none!important;
+  font-weight:normal!important;
+}
+.selected a {font-weight:bold!important;}
+
+/* Login */
+#header-bottom-right a {color:blue!important;}
+
+/* Posts */
+.content {max-width:700px!important; margin:10px!important;}
+#siteTable {margin-top:20px;}
+.link {padding:10px 10px 10px 0!important; border-bottom:1px solid #DEDEDE;}
+.promotedlink .rank {display:none!important;}
+.promotedlink .midcol {margin-left:10px;}
+.link .rank { display:none!important; }
+.midcol {width:auto!important; margin-left:0px; margin-right:10px!important;}
